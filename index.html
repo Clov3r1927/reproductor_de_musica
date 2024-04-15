@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Reproductor de musica 231192</title>
+</head>
+<body>
+  <div class="container-reproductor">
+    <H2 class="TI">REPRODUCTOR DE MUSICA</H2>
+
+    <div class="container">
+      <div class="container-imagen">
+         <img src="img/clover2.jpg" alt="foto">
+      </div>
+     
+      <audio></audio>
+      <h1>Song</h1>
+      <div id="current_time">0:00</div>
+  
+      <div class="buttons">
+        <button id="prev">
+          <i class="fas fa-backward"><</i>
+        </button>
+        <button id="play">
+          <i class="fas fa-play">||</i>
+        </button>
+        <button id="next">
+          <i class="fas fa-forward">></i>
+        </button>
+      </div>
+      <div id="current_audio"></div>
+  
+      <div class="progress_container">
+        <div id="progress"></div>
+      </div>
+  
+    </div>
+  </div>
+ 
+  <script type="module" src="controllers/index.js"></script>
+</body>
+</html>
